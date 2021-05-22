@@ -1,4 +1,4 @@
-# [Kotlin](https://kotlinlang.org/) sample app using AWS API Gateway, Lambda and DynamoDB
+# Serverless [Kotlin](https://kotlinlang.org/) sample app using AWS API Gateway, Lambda and DynamoDB
 
 The application uses a [Lambda](https://docs.aws.amazon.com/lambda/?id=docs_gateway) function behind [API Gateway](https://docs.aws.amazon.com/apigateway/?id=docs_gateway) to compute values of the Fibonacci sequence.
 
