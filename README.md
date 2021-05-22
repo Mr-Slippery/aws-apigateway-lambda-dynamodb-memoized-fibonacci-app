@@ -1,8 +1,8 @@
-# Kotlin sample app using AWS API Gateway, Lambda and DynamoDB
+# [Kotlin](https://kotlinlang.org/) sample app using AWS API Gateway, Lambda and DynamoDB
 
-The application uses a Lambda function behind API Gateway to compute values of the Fibonacci sequence.
+The application uses a [Lambda](https://docs.aws.amazon.com/lambda/?id=docs_gateway) function behind [API Gateway](https://docs.aws.amazon.com/apigateway/?id=docs_gateway) to compute values of the Fibonacci sequence.
 
-It also uses DynamoDB as a memoization cache to read previously computed values and to add newly computed values.
+It also uses [DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway) as a memoization cache to read previously computed values and to add newly computed values.
 
 **Note:** The first time you deploy you have to add an inline policy to the Lambda role allowing it access to DynamoDB.
 
@@ -17,5 +17,5 @@ Once the system is deployed, you can use the application's endpoint to retrieve 
 * Value is now cached (retrieved from DynamoDB):
 ![Cached value](value-cached.png "Value returned from cache")
 
-We note the presence of the new entry for `n: 9, value: 34` in the corresponding view of AWS NoSQL Workbench:
+We note the presence of the new entry for `n: 9, value: 34` in the corresponding view of AWS [NoSQL Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html):
 ![NoSQL Workbench view](nosql.png "NoSQL Workbench with n:9, value:34")
