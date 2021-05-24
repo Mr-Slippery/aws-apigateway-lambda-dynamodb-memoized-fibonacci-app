@@ -4,7 +4,7 @@ The application uses a [Lambda](https://docs.aws.amazon.com/lambda/?id=docs_gate
 
 It also uses [DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway) as a memoization cache to read previously computed values and to add newly computed values.
 
-**Note:** The first time you deploy you have to add an inline policy to the Lambda role allowing it access to DynamoDB.
+**Note:** the lambda function gets full access to DynamoDB, please consider this before deploying/running and adjust the `Policies` under [template.yaml](template.yaml) as desired.
 
 The structure of the deployed system should be:
 
