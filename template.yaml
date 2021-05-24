@@ -9,8 +9,17 @@ Description: >
 Globals:
   Function:
     Timeout: 20
-
 Resources:
+  FibTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      TableName: fib
+      PrimaryKey:
+        Name: n
+        Type: Number
+      ProvisionedThroughput:
+        ReadCapacityUnits: 2
+        WriteCapacityUnits: 2
   FibApi:
     Type: AWS::Serverless::Api
     Properties:
